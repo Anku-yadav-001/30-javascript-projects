@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-container{
+   width: 30%;
+   border: 2px solid white;
+   border-radius: 10px;
+   background: linear-gradient(red, blue, red);
+}
+.user-inputs{
+    width: 100%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-inputs input{
+    width: 70%;
+    height: 4vh;
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px 0px 5px 0;
+    color: red;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.user-inputs button{
+    width: 12%;
+    height: 7vh;
+    border-radius: 10px;
+    margin: 5px 10px 5px 5px;
+    padding: 5px;
+}
+.user-inputs input::placeholder{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.user-inputs button:hover{
+    scale: 1.1;
+    translate: 2s all ease-in;
+    border: 2px solid blue;
+}
+.weather-info{
+    text-align: center;
+}
+.weather-info img{
+    width: 30%;
+    margin-top: -10px;
+}
+.weather-info h2{
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-top: -15px;
+}
+.weather-info h1{
+    font-family: sans-serif;
+    margin-top: -25px;
+    color: white;
+}
+.humidityandspeed{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.humidityandspeed div img{
+    width: 20%;
+    height: 8vh;
+}
+.humidityandspeed>div{
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 5px;
+}
+.humidityandspeed div div>p{
+    font-weight: 600;
+}
+.advanced{
+   text-align: center;
+   font-weight: 700;
+   font-family: sans-serif;
+   line-height: 20px;
+}
+#weather-all-info{
+    display: none;
+}
